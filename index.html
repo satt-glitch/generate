@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>apalah generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>generator apalah</h1>
+    <label for="text1">Text 1 (judul buku):</label>
+    <input type="text" id="text1" placeholder="Masukkan text 1" />
+
+    <label for="text2">Text 2 (isi, pisah dengan enter maks 4 baris):</label>
+    <textarea id="text2" placeholder="isi text (pencet preview untuk lihat gambar)" rows="5"></textarea>
+
+    <button onclick="generate()">Preview</button>
+    <button onclick="saveImage()">save</button>
+
+    <div class="preview-wrapper">
+      <canvas id="canvas" width="2480" height="3508"></canvas>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
